@@ -9,6 +9,7 @@ nav {
   min-height: 10vh;
   background: rgb(61, 61, 61);
   color: white;
+  overflow:hidden;
 }
 
 .nav-links {
@@ -22,5 +23,9 @@ nav {
 .navLink {
   color: white;
   text-decoration: none;
+  padding: 20px;
+}
 
+.navLink:hover {
+  background-color: black;
 }

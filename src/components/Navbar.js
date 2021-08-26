@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import cartIcon from '../img/cart.svg'
 
 
-const Navbar = () => {
+const Navbar = ({ cartQty }) => {
+
+
   return (
       <nav>
         <h3>Logo</h3>
@@ -16,8 +19,12 @@ const Navbar = () => {
           <Link className="navLink" to="/about">
             <li>About</li>
           </Link>
-          <Link className="navLink" to="/contact">
-            <li>Contact</li>
+          <Link className="navLink" to="/cart">
+            <li>
+              <img src={cartIcon} alt="cart" height="36px" />
+              {cartQty > 0 &&
+              <span>({cartQty})</span>}
+            </li>
           </Link>
         </ul>
       </nav>
