@@ -9,11 +9,12 @@ nav {
   min-height: 10vh;
   background: rgb(61, 61, 61);
   color: white;
-  overflow:hidden;
+
 }
 
 .nav-links {
   width: 50%;
+  height:100%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,9 +24,28 @@ nav {
 .navLink {
   color: white;
   text-decoration: none;
+
   padding: 20px;
+
+
 }
 
 .navLink:hover {
   background-color: black;
+  border-radius: 10px;
+}
+
+
+.cartQty {
+  border-radius: 50%;
+  width: 16px;
+  line-height: 16px;
+  padding: 4px;
+  background: rgb(106, 190, 247);
+  border: 2px solid rgb(106, 190, 247);
+  color:white;
+  text-align: center;
+  font-size: 14px;
+  vertical-align:top;
+  margin-left: -10px;
 }

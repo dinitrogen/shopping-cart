@@ -21,9 +21,11 @@ const Navbar = ({ cartQty }) => {
           </Link>
           <Link className="navLink" to="/cart">
             <li>
+              <div className="cartIcon">
               <img src={cartIcon} alt="cart" height="36px" />
               {cartQty > 0 &&
-              <span>({cartQty})</span>}
+              <span className="cartQty">{cartQty}</span>}
+              </div>
             </li>
           </Link>
         </ul>

@@ -4,7 +4,7 @@ import shopItems from './shopItems';
 
 
 
-const Item = () => {
+const Item = ({handleAdd}) => {
   let { id } = useParams();
   const [item, setItem] = useState({});
   
@@ -19,7 +19,8 @@ const Item = () => {
   return (
       <div>
         <h1>{item.name} </h1>
-        <p>Description</p>
+        <p>{item.description}</p>
+        <button onClick={() => handleAdd(item)}>Add to cart</button>
 
       </div>
   );

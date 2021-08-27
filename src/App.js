@@ -41,9 +41,11 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Homepage} />
           <Route exact path="/shop">
-            <Shop handleAdd={addToCart} />
+            <Shop />
           </Route>
-          <Route exact path="/shop/:id" component={Item} />
+          <Route exact path="/shop/:id">
+            <Item handleAdd={addToCart} />  
+          </Route>
           <Route exact path="/about" component={About} />
           <Route exact path="/cart">
             <Cart cartItems={cartContents} />

@@ -2,7 +2,7 @@ import React from 'react';
 import ShopItemCard from './ShopItemCard';
 import shopItems from './shopItems';
 
-const Shop = ({handleAdd}) => {
+const Shop = () => {
   
 
 
@@ -14,8 +14,7 @@ const Shop = ({handleAdd}) => {
             <ShopItemCard
               key={shopItem.id}
               itemName={shopItem.name}
-              itemId={shopItem.id}
-              handleClick={() => handleAdd(shopItem)}  
+              itemId={shopItem.id} 
             /> 
           )}
         </div>
