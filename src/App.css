@@ -37,15 +37,20 @@ nav {
 
 
 .cartQty {
+  display: inline-block;
+  line-height: 0px;
   border-radius: 50%;
-  width: 16px;
-  line-height: 16px;
-  padding: 4px;
+  border: 2px solid;
+  font-size: 12px;
+  vertical-align: top;
+  margin-left: -15px;
   background: rgb(106, 190, 247);
-  border: 2px solid rgb(106, 190, 247);
-  color:white;
-  text-align: center;
-  font-size: 14px;
-  vertical-align:top;
-  margin-left: -10px;
+}
+
+.cartQty span {
+  display: inline-block;
+  padding-top: 50%;
+  padding-bottom: 50%;
+  margin-left: 4px;
+  margin-right: 4px;
 }

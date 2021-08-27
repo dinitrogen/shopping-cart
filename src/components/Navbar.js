@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import cartIcon from '../img/cart.svg'
+import cartIcon from '../img/cart.svg';
+import sawIcon from '../img/saw.svg';
 
 
 const Navbar = ({ cartQty }) => {
@@ -8,7 +9,9 @@ const Navbar = ({ cartQty }) => {
 
   return (
       <nav>
-        <h3>Logo</h3>
+        <Link to="/">
+          <div><img src={sawIcon} alt="saw" height="60px" /></div>
+        </Link>
         <ul className="nav-links">
           <Link className="navLink" to="/">
             <li>Home</li>
@@ -24,7 +27,7 @@ const Navbar = ({ cartQty }) => {
               <div className="cartIcon">
               <img src={cartIcon} alt="cart" height="36px" />
               {cartQty > 0 &&
-              <span className="cartQty">{cartQty}</span>}
+              <span className="cartQty"><span>{cartQty}</span></span>}
               </div>
             </li>
           </Link>
