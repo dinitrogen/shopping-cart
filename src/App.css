@@ -19,6 +19,16 @@ nav {
   height: 5rem;
 }
 
+.navLogo {
+  height: 100%;
+  min-width: 25%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+
 .hamburger {
   display: none;
 }

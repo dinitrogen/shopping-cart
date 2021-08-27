@@ -16,7 +16,6 @@ const Cart = ({cartItems}) => {
   }, []);
 
   const handleClick = (e) => {
-    console.log(e.target);
     if (cartNode.current.contains(e.target)) {
       return;
     }
