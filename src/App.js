@@ -6,6 +6,7 @@ import Shop from './components/Shop';
 import Item from './components/Item';
 import About from './components/About';
 import Cart from './components/Cart';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -47,10 +48,9 @@ const App = () => {
             <Item handleAdd={addToCart} />  
           </Route>
           <Route exact path="/about" component={About} />
-          <Route exact path="/cart">
-            <Cart cartItems={cartContents} />
-          </Route>
+          
         </Switch>
+        <Cart cartItems={cartContents} />
       </div>
     </Router>
   );
