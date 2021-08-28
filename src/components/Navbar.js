@@ -30,7 +30,7 @@ const handleCartClick = () => {
   return (
       <nav>
         <Link className="navLogo" to="/" onClick={closeMobileMenu}>
-          <div><img src={sawIcon} alt="saw"  width="90%"/></div>
+          <div><img src={sawIcon} alt="saw"  width="100%"/></div>
         </Link>
         <ul className="nav-links">
           <Link className="navLink" to="/" onClick={closeMobileMenu}>
