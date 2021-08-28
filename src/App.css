@@ -20,15 +20,22 @@ nav {
 }
 
 .navLogo {
+
+}
+
+.logoContainer {
   height: 100%;
-  min-width: 30%;
   display:flex;
   justify-content: center;
   align-items: center;
   overflow: visible;
-  
+  padding-right: 2rem;
+  min-width: 10rem;
 }
 
+.logoImg {
+  width: 100%;
+}
 
 .hamburger {
   display: none;
