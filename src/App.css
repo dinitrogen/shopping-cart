@@ -19,22 +19,19 @@ nav {
   height: 5rem;
 }
 
-.navLogo {
-
-}
 
 .logoContainer {
   height: 100%;
   display:flex;
   justify-content: center;
   align-items: center;
-  overflow: visible;
   padding-right: 2rem;
-  min-width: 10rem;
+  min-width: 20rem;
 }
 
 .logoImg {
-  width: 100%;
+  max-width: 90%;
+  height: auto;
 }
 
 .hamburger {
