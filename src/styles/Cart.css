@@ -1,0 +1,18 @@
+.cartDisplay {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: rgb(61, 61, 61);
+    height:100%;
+    width: 50%;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0,0,0,0.05);
+  }
+  
+  .cartDisplay.active {
+    right: 0;
+  }

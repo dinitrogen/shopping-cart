@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import CartItemCard from './CartItemCard';
+import '../styles/Cart.css';
 
 
 const Cart = ({cartItems}) => {

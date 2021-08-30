@@ -1,17 +1,18 @@
 import React, { useState } from 'react';
-import './App.css';
+import './styles/App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import Shop from './components/Shop';
 import Item from './components/Item';
 import About from './components/About';
 import Cart from './components/Cart';
+import Footer from './components/Footer';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 const App = () => {
-  const [cartQty, setCartQty] = useState(100);
+  const [cartQty, setCartQty] = useState(0);
   const [cartContents, setCartContents] = useState([]);
 
   const addToCart = (item) => {
@@ -51,6 +52,7 @@ const App = () => {
           
         </Switch>
         <Cart cartItems={cartContents} />
+        <Footer />
       </div>
     </Router>
   );

@@ -1,0 +1,39 @@
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background: rgb(61, 61, 61);
+    color: white;
+    height: 5rem;
+  }
+  
+  .footerList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  .footerText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height:24px;
+    padding: 1rem;
+    padding-right: 3rem;
+  }
+  
+  .footerLinks {
+    padding-left: 3rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerIcon {
+    padding: 1rem;
+  }

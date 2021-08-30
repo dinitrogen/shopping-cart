@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import cartIcon from '../img/cart.svg';
 import sawIcon from '../img/saw.svg';
+import '../styles/Navbar.css';
 
 
 const Navbar = ({ cartQty }) => {
