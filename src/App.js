@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 const App = () => {
-  const [cartQty, setCartQty] = useState(0);
+  const [cartQty, setCartQty] = useState(100);
   const [cartContents, setCartContents] = useState([]);
 
   const addToCart = (item) => {

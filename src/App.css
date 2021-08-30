@@ -72,7 +72,7 @@ nav {
 
 .cartIcon {
   /* prevents cartQty circle from wrapping to next row */
-  min-width: 45px;
+  min-width: 60px;
 }
 
 .navLink:hover {
