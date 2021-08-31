@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles/App.css';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
@@ -14,6 +14,19 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const App = () => {
   const [cartQty, setCartQty] = useState(0);
   const [cartContents, setCartContents] = useState([]);
+
+
+  useEffect(() => {
+    calculateCartQty();
+  });
+  
+  const calculateCartQty = () => {
+    let itemQtys = cartContents.map((cartItem) => {
+      return cartItem.qty;
+    });
+    let totalQty = itemQtys.reduce((prev, currrent) => parseInt(prev) + parseInt(currrent), 0);
+    setCartQty(totalQty);
+  }
 
   const addToCart = (item) => {
     let itemId = item.id;
@@ -35,6 +48,16 @@ const App = () => {
       setCartContents([...cartContents, {...item, qty: 1}])
     }
   }
+
+  const changeItemQty = (e, item) => {
+    let newItemQty = e.target.value
+    let itemId = item.id;
+    setCartContents(
+      cartContents.map((cartItem) => {
+        return (cartItem.id === itemId ? {...cartItem, qty: parseInt(newItemQty)} : cartItem)
+      })
+    )
+  }
   
   return (
     <Router>
@@ -51,7 +74,10 @@ const App = () => {
           <Route exact path="/about" component={About} />
           
         </Switch>
-        <Cart cartItems={cartContents} />
+        <Cart 
+          cartItems={cartContents}
+          handleQtyChange={changeItemQty} 
+          />
         <Footer />
       </div>
     </Router>
