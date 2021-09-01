@@ -53,6 +53,9 @@ const App = () => {
 
   const changeItemQty = (e, item) => {
     let newItemQty = e.target.value
+    if (newItemQty === '') {
+      newItemQty = 0;
+    }
     let itemId = item.id;
     setCartContents(
       cartContents.map((cartItem) => {

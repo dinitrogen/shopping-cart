@@ -1,11 +1,11 @@
 import React from 'react';
-import sawIcon from '../img/saw.svg';
+import home from '../img/photos/home.jpg';
 
 const Homepage = () => {
   return (
-      <div>
+      <div className="contentDiv">
         <h1>Hand-crafted homes and modular accessories for guinea pigs, hamsters, and other small pets </h1>
-        
+        <img className="homeImg" src={home} alt='home' width="70%" />
       </div>
   );
 }

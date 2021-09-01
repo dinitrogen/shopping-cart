@@ -42,9 +42,11 @@ const handleCartClick = () => {
           <Link className="navLink" to="/shop" onClick={closeMobileMenu}>
             <li>Shop</li>
           </Link>
-          <Link className="navLink" to="/about" onClick={closeMobileMenu}>
+          
+          {/* <Link className="navLink" to="/about" onClick={closeMobileMenu}>
             <li>About</li>
-          </Link>
+          </Link> */}
+          
           </ul>
 
           <div className="navLink"  onClick={handleCartClick}>

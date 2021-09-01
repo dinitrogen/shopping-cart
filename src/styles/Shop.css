@@ -1,0 +1,30 @@
+
+
+.shopItemsDiv {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.shopItemCardDiv {
+    
+    padding: 1rem;
+    text-align: center;
+   
+}
+
+.itemDiv {
+    padding: 1rem 0 5.5rem  0;
+    text-align: center;
+}
+
+.itemThumbnail {
+    border-radius: 10px;
+}
+
+button {
+    margin: 0.5rem;
+    padding: 0.2rem;
+}
+

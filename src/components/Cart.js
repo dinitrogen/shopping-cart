@@ -34,7 +34,7 @@ const Cart = ({cartItems, handleQtyChange, totalQty, totalPrice}) => {
         <div className="cartHeader">
           
           <Link to="/shop">
-            <button className="cartButton" onClick={hideCart}>Close</button>
+            <button className="closeButton" onClick={hideCart}>X</button>
           </Link>
         </div>
         <h1>Cart</h1>

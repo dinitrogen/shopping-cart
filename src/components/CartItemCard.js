@@ -11,6 +11,7 @@ const CartItemCard = ({itemName, itemQty, handleInputChange }) => {
         
         
           <input
+            className="cartInput"
             type="number"
             value={itemQty}
             onChange={handleInputChange} />
