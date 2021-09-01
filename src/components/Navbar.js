@@ -30,13 +30,13 @@ const handleCartClick = () => {
 
   return (
       <nav>
-        <Link className="navLogo" to="/" onClick={closeMobileMenu}>
+        <Link className="navLogo" to="/shopping-cart" onClick={closeMobileMenu}>
           <div className="logoContainer">
             <img className="logoImg" src={sawIcon} alt="saw" />
           </div>
         </Link>
         <ul className="nav-links">
-          <Link className="navLink" to="/" onClick={closeMobileMenu}>
+          <Link className="navLink" to="/shopping-cart" onClick={closeMobileMenu}>
             <li>Home</li>
           </Link>
           <Link className="navLink" to="/shop" onClick={closeMobileMenu}>

@@ -78,7 +78,7 @@ const App = () => {
       <div>
         <Navbar cartQty={cartQty} />
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/shopping-cart" component={Homepage} />
           <Route exact path="/shop">
             <Shop />
           </Route>
