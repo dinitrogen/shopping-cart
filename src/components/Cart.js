@@ -4,7 +4,7 @@ import CartItemCard from './CartItemCard';
 import '../styles/Cart.css';
 
 
-const Cart = ({cartItems, handleQtyChange}) => {
+const Cart = ({cartItems, handleQtyChange, totalQty, totalPrice}) => {
 
   const cartNode = useRef();
 
@@ -34,7 +34,7 @@ const Cart = ({cartItems, handleQtyChange}) => {
         <div className="cartHeader">
           
           <Link to="/shop">
-            <button className="cartButton" onClick={hideCart}>Continue shopping</button>
+            <button className="cartButton" onClick={hideCart}>Close</button>
           </Link>
         </div>
         <h1>Cart</h1>
@@ -47,6 +47,11 @@ const Cart = ({cartItems, handleQtyChange}) => {
                 handleInputChange={(e) => handleQtyChange(e,cartItem)}
             /> 
           )}
+        </div>
+        <div className="orderSummaryDiv">
+          <h2>Order Summary</h2>
+          <div>Items: {totalQty}</div>
+          <div>Total: ${totalPrice}</div>
         </div>
         <button>Checkout</button>
       </div>

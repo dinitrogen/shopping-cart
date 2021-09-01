@@ -14,10 +14,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 const App = () => {
   const [cartQty, setCartQty] = useState(0);
   const [cartContents, setCartContents] = useState([]);
+  const [totalPrice, setTotalPrice] = useState(0);
 
 
   useEffect(() => {
     calculateCartQty();
+    calculateTotalPrice();
   });
   
   const calculateCartQty = () => {
@@ -58,6 +60,15 @@ const App = () => {
       })
     )
   }
+
+  const calculateTotalPrice = () => {
+    let itemSubtotals = cartContents.map((cartItem) => {
+      return (cartItem.qty * cartItem.price)
+    });
+    let newTotalPrice = itemSubtotals.reduce((prev, current) => prev + current, 0);
+    setTotalPrice(newTotalPrice);
+
+  }
   
   return (
     <Router>
@@ -76,7 +87,9 @@ const App = () => {
         </Switch>
         <Cart 
           cartItems={cartContents}
-          handleQtyChange={changeItemQty} 
+          handleQtyChange={changeItemQty}
+          totalQty={cartQty}
+          totalPrice={totalPrice}
           />
         <Footer />
       </div>
