@@ -12,7 +12,7 @@ const Footer = () => {
   return (
       <footer>
         <ul className="footerList">
-            <li className="footerText">&copy; 2021 Tiny Friends Woodshop</li>
+            <li className="footerText">&copy; 2024 Tiny Friends Woodshop</li>
             <li className="footerLinks">
                 <div className="footerIcon">
                   <a href="#"><img src={twIcon} alt="twitter" width="20px"/></a>

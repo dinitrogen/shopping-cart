@@ -18,14 +18,15 @@ const Item = ({handleAdd}) => {
   
   return (
       <div className="itemDiv contentDiv">
-        <img className="itemThumbnail" src={item.imgUrl} alt="item" width="75%"></img>
+        <img className="itemThumbnail" src={item.imgUrl} alt="item" width="40%"></img>
         <h1>{item.name} </h1>
         <h2>${item.price}.00</h2>
+        <br/>
         <p>{item.description}</p>
           <div className="itemButtonDiv">
-            <button onClick={() => handleAdd(item)}>Add to cart</button>
+            <button className="addToCartBtn" onClick={() => handleAdd(item)}>Add to cart</button>
             <br/>
-            <Link to="/shop"><button>Back</button></Link>
+            <Link to="/shop"><button className="backBtn">&lt; Back</button></Link>
           </div>
       </div>
   );

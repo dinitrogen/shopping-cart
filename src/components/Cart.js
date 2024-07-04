@@ -45,15 +45,15 @@ const Cart = ({cartItems, handleQtyChange, totalQty, totalPrice}) => {
                 itemName={cartItem.name}
                 itemQty={cartItem.qty}
                 handleInputChange={(e) => handleQtyChange(e,cartItem)}
-            /> 
+            />
           )}
         </div>
         <div className="orderSummaryDiv">
-          <h2>Order Summary</h2>
+          <h2>Order Summary</h2><br/>
           <div>Items: {totalQty}</div>
           <div>Total: ${totalPrice}</div>
         </div>
-        <button>Checkout</button>
+        <button className="checkoutBtn">Checkout</button>
       </div>
   );
 }
