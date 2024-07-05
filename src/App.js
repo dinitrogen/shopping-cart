@@ -32,7 +32,7 @@ const App = () => {
 
   const addToCart = (item) => {
     let itemId = item.id;
-
+    
     const newCartQty = cartQty + 1;
     setCartQty(newCartQty);
 
@@ -49,6 +49,7 @@ const App = () => {
     } else {
       setCartContents([...cartContents, {...item, qty: 1}])
     }
+    document.querySelector('.addToCartMsg').innerHTML = 'Added to cart!';
   }
 
   const changeItemQty = (e, item) => {

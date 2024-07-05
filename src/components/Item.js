@@ -26,6 +26,7 @@ const Item = ({handleAdd}) => {
           <div className="itemButtonDiv">
             <button className="addToCartBtn" onClick={() => handleAdd(item)}>Add to cart</button>
             <br/>
+            <div className="addToCartMsg"></div>
             <Link to="/shop"><button className="backBtn">&lt; Back</button></Link>
           </div>
       </div>

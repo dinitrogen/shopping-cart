@@ -25,7 +25,11 @@ footer {
     line-height:24px;
     padding: 1rem;
     padding-right: 2rem;
-    
+
+    @media only screen and (max-width: 600px) {
+      font-size: 0.875rem;
+      padding-right: 0.5rem;
+    }
   }
   
   .footerLinks {
@@ -33,6 +37,10 @@ footer {
     display:flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: 600px) {
+      padding-left: 1rem;
+    }
   }
   
   .footerIcon {

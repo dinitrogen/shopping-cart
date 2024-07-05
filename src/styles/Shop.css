@@ -30,7 +30,7 @@ button {
 }
 
 .addToCartBtn {
-    background-color: #04AA6D; /* Green */
+    background-color: #04AA6D;
     border: none;
     border-radius: 10px;
     color: white;
@@ -42,6 +42,13 @@ button {
     font-weight: bold;
     cursor: pointer;
     margin-top: 1rem;
+}
+
+.addToCartMsg {
+    color: #04AA6D;
+    font-size: 0.875rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .backBtn {
